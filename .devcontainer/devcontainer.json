@@ -23,7 +23,7 @@
     // and USER_GID in .devcontainer/Dockerfile to match your user if not 1000.
     "runArgs": [
         "-u",
-        "chucknelson",
+        "vscode",
         "--name",
         "linux_devcontainer"
     ],
