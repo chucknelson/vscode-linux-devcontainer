@@ -3,7 +3,7 @@
 # If image size and/or layers become a problem, see https://docs.docker.com/develop/develop-images/multistage-build/
 
 # Using Debian 10 (buster)
-FROM debian:buster as base
+FROM debian:buster
 
 # Avoid warnings by switching to noninteractive
 ENV DEBIAN_FRONTEND=noninteractive
