@@ -1,6 +1,12 @@
 # Adapted from https://github.com/microsoft/vscode-dev-containers
-# Using regular RUN statements for readability
+
+# Using regular RUN statements for readability, instead of chaining all commands together with &&
 # If image size and/or layers become a problem, see https://docs.docker.com/develop/develop-images/multistage-build/
+# Layers don't seem to be an issue thus far:
+# Using single RUN with &&:
+# vscodelinuxdevcontainer                            latest    41af0e5cc3a2    454MB
+# Using multiple RUN statements:
+# vscodelinuxdevcontainer                            latest    545a1ef5370e    480MB
 
 # Using Debian 10 (buster)
 FROM debian:buster
